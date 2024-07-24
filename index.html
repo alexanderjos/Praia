@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Script -->
+  <script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8P5JGK65ZN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8P5JGK65ZN');
+</script>
+  <title>PRAIA - Inicio</title>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5DP76BNL');</script>
+  <!-- End Google Tag Manager -->
+
+
+</head>
+
+<body class="hidden">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DP76BNL"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="centrado" id="onload">
+    <img src="img/copa.gif" alt="Copa">
+  </div>
+  <nav class="menu">
+    <section class="menu__container">
+      <a href="index.html"><img class="logo" src="img/logosf.svg" alt="logo" /></a>
+
+      <ul class="menu__links">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">INICIO</a>
+        </li>
+
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Menu <img src="img/arrow.svg" alt="Flecha" class="menu__arrow" /></a>
+
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="Desayuno y Extras.html" class="menu__link menu__link--inside">Desayuno y Extras</a>
+            </li>
+            <li class="menu__inside">
+              <a href="Entradas y Piqueos.html" class="menu__link menu__link--inside">Entradas y Piqueos</a>
+            </li>
+            <li class="menu__inside">
+              <a href="Platos de Fondo.html" class="menu__link menu__link--inside">Platos de Fondo</a>
+            </li>
+            <li class="menu__inside">
+              <a href="Tragos y Soft Drinks.html" class="menu__link menu__link--inside">Tragos y Soft Drinkd</a>
+            </li>
+            <li class="menu__inside">
+              <a href="Botellas de Licor.html" class="menu__link menu__link--inside">Boetllas de Licor</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="Nosotros.html" class="menu__link">Nosotros</a>
+        </li>
+
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Galeria<img src="img/arrow.svg" alt="Flecha" class="menu__arrow" /></a>
+
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="Ambientes.html" class="menu__link menu__link--inside">Ambientes</a>
+            </li>
+            <li class="menu__inside">
+              <a href="Platos.html" class="menu__link menu__link--inside">Platos</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu__item">
+          <a href="Contactanos.html" class="menu__link">Contactanos</a>
+        </li>
+      </ul>
+
+      <div class="menu__hamburguer">
+        <img src="img/menu.svg" alt="Menu" class="menu__img" />
+      </div>
+    </section>
+  </nav>
+  <!-- Slider  principal -->
+  <div class="container">
+    <!-- Botones del slider -->
+    <input type="radio" id="slideUno" name="image_Slide" hidden />
+    <input type="radio" id="slideDos" name="image_Slide" hidden />
+    <input type="radio" id="slideTres" name="image_Slide" hidden />
+    <!-- Contenido de las imagenes -->
+    <div class="slide">
+      <!-- Imagem 1 -->
+      <div class="item_Slide">
+        <img class="img" src="img/fondo.webp" alt="imagen del establecimiento" />
+        <img id="logos1" src="img/PRAIA-LOGO-BLANCO.webp" alt="logo de la Empresa" />
+        <p id="ps1">Vive la experiencia</p>
+        <button onclick="location.href='Carta.html'" id="btns1">
+          Nuestra Carta
+        </button>
+      </div>
+      <!-- Imagem 2 -->
+      <div class="item_Slide">
+        <img class="img" src="img/fondo1.webp" alt="imagen de persona y plato" />
+        <span id="ps2">Degusta de la mejor gastronomia</span>
+        <button onclick="location.href='Platos.html'" id="btns2">
+          Nuestros Platos
+        </button>
+      </div>
+      <!-- Imagem 3 -->
+      <div class="item_Slide">
+        <img class="img" src="img/fondo2.webp" alt="Imagen frente a la Playa" />
+        <span id="ps3">Con la mejor vista de pimentel </span>
+        <button onclick="location.href='Ambientes.html'" id="btns3">
+          Nuestros Ambientes
+        </button>
+        
+      </div>
+    </div>
+    <!-- Para referenciar a los botones -->
+    <div class="pagination">
+      <label class="pagination_label" for="slideUno">
+        <img src="img/fondon.webp" alt="imagen del establecimiento" />
+      </label>
+      <label class="pagination_label" for="slideDos">
+        <img src="img/fondo1n.webp" alt="imagen de persona y plato" />
+      </label>
+      <label class="pagination_label" for="slideTres">
+        <img src="img/fondo2n.webp" alt="Imagen frente a la Playa" />
+      </label>
+    </div>
+  </div>
+
+  <div class="container2">
+    <!-- Botones del slider -->
+    <input type="radio" id="s1" name="image_Slide" hidden />
+    <input type="radio" id="s2" name="image_Slide" hidden />
+    <input type="radio" id="s3" name="image_Slide" hidden />
+    <!-- Contenido del slider -->
+    <div class="slider">
+      <div class="item__Slider">
+        <div class="contenido">
+          <div class="imagen">
+            <img src="img/historia.webp" alt="Descripción de la imagen 1" />
+          </div>
+          <div class="texto">
+            <h1>Una experiencia diferente en Pimentel</h1>
+            <p>
+              Imagina comenzar tu día con un desayuno y el sonido de las olas
+              del mar, almorzar sintiendo la brisa marina, tomarte un trago
+              admirando el atardecer o disfrutar de una cena romántica viendo
+              la ciudad de Pimentel. Todo eso lo puedes hacer en Praia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item__Slider">
+        <div class="contenido contenido2">
+          <div class="imagen">
+            <img src="img/h1.webp" alt="Descripción de la imagen 2" />
+          </div>
+          <div class="texto">
+            <h1>Misión</h1>
+            <p>
+              En el restaurante PRAIA Roofttop Restaurant. Buscamos la
+              excelencia en la preparación de comida criolla, marina y
+              parrilladas para así satisfacer el gusto de nuestros clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item__Slider">
+        <div class="contenido">
+          <div class="imagen">
+            <img src="img/historia.webp" alt="Descripción de la imagen 3" />
+          </div>
+          <div class="texto">
+            <h1>Visión</h1>
+            <p>
+              Buscamos en el 2023 ser uno de los
+              restaurantes más destacados, no solo en el norte del país, sino
+              también en todo el Perú, ofreciendo los mejores platos, un
+              servicio de calidad e identificándonos con nuestro sabor y
+              creatividad en nuestras comidas y bebidas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Para referenciar a los botones -->
+    <div class="pagination1">
+      <label class="pagination1_label" for="s1">
+        <img src="img/historia.webp" alt="Imagen del establecimiento con personas" />
+      </label>
+      <label class="pagination1_label" for="s2">
+        <img src="img/historia.webp" alt="Imagen del establecimiento" />
+      </label>
+      <label class="pagination1_label" for="s3">
+        <img src="img/historia.webp" alt="Imagen del establecimiento" />
+      </label>
+    </div>
+  </div>
+
+
+  <div class="row footer">
+    <footer>
+      <div class="row row__contenido">
+        <div class="col-4 g1p1">
+          <a href="index.html"><img class="img" src="img/PRAIA-LOGO-BLANCO.webp" alt="PRAIA-LOGO"></a>
+        </div>
+        <div class="col-4">
+          <h1>Sobre Nosotros</h1>
+          <div class="row gsn">
+            <img src="img/maps.svg" alt="correo">
+            <p>Manuel Seoane 916, Pimentel 5to Piso del Hotel Puerto del Sol</p>
+          </div>
+          <div class="row gsn">
+            <img src="img/correo.svg" alt="correo">
+            <p class="correo">marketing@praia.net</p>
+          </div>
+          <div class="row"></div>
+        </div>
+        <div class="col-4">
+          <h1>Redes Sociales</h1>
+          <div class="redes_sociales">
+            <a href="https://www.facebook.com/praiarooftop"><img class="fb" src="img/Facebook.svg"
+                alt="logo Facebook"></a>
+            <a href="https://www.instagram.com/praiarooftoprestaurant/"><img class="ig" src="img/instagram.svg"
+                alt="logo Instagram"></a>
+            <a href="https://wa.link/qngzaa"><img class="wsp" src="img/whatsApp.svg" alt="logo whatsApp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row g2">
+        <h1>PRAIA © 2023 </h1>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
